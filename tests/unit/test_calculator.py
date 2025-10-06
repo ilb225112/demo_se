@@ -3,7 +3,7 @@ Unit Tests for Calculator
 Students start with 2 passing tests, then add more
 """
 import pytest
-from src.calculator import add, divide, subtract
+from src.calculator import add, divide, subtract, multiply
 
 class TestBasicOperations:
     """Test basic arithmetic operations"""
@@ -33,7 +33,6 @@ class TestMultiplyDivideWithValidation:
         with pytest.raises(TypeError, match="Division requires numeric inputs"):
             divide("10", 2)
 
-# TODO: Students will add TestMultiplyDivide class
 class TestMultiplyDivide:
     """Test multiplication and division operations"""
     
